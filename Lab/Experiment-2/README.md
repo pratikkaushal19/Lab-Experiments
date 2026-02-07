@@ -29,25 +29,25 @@ Docker is a containerization platform that allows applications to run in isolate
 The Nginx Docker image was pulled from Docker Hub.
 
 ---
-![PULL DOCKER IMAGES ](./images/image1.jpeg)
+![PULL DOCKER IMAGES ](./images/image1.png)
 
 ### Step 2: Run Docker Container with Port Mapping
 A Docker container was started using the Nginx image with port mapping.
 
 ---
-![RUN CONTAINER](./images/image2.jpeg)
+![RUN CONTAINER](./images/image2.png)
 
 ### Step 3: Verify Running Containers
 The list of running containers was checked.
 
 ---
-![VERIFY](./images/image3.jpeg)
-![VERIFY](./images/image4.jpeg)
+![VERIFY](./images/image3.png)
+![VERIFY](./images/image4.png)
 ### Step 4: Stop and Remove Docker Container
 The running container was stopped and removed.
 
 ---
-![STOP CONTAINER](./images/image5.jpeg)
+![STOP CONTAINER](./images/image5.png)
 
 ### Step 5: Remove Docker Image
 The Docker image was removed from the system.
