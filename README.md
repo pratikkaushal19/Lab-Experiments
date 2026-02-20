@@ -1,5 +1,5 @@
 # Lab-Experiments
 
 ##
-[Experiment-1][LAB-EXPERIMENTS/Lab/Experiment-1] 
-[Experiment-2][LAB-EXPERIMENTS/Lab/Experiment-2]
+[Experiment-1][./Lab/Experiment-1/README.md]  
+[Experiment-2][./Lab/Experiment-2/README.md] 
