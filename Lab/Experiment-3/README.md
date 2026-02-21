@@ -34,8 +34,8 @@ docker pull nginx:latest
 docker run -d --name nginx-default -p 8080:80 nginx
 ```
 
-![images for exp 3](image1.png)
-![images for exp 3](image2.png)
+![images for exp 3](./images/image1.png)
+![images for exp 3](./images/image2.png)
 
 ### Run NGINX Built on Ubuntu
 
@@ -43,8 +43,8 @@ docker run -d --name nginx-default -p 8080:80 nginx
 docker run -d --name nginx-ubuntu -p 8082:80 nginx-ubuntu
 ```
 
-![images for exp 3](image3.png)
-![images for exp 3](image4.png)
+![images for exp 3](./images/image3.png)
+![images for exp 3](./images/image4.png)
 
 ### Run NGINX Alpine Version
 
@@ -58,9 +58,9 @@ docker run -d \
 
 ```
 
-![images for exp 3](image5.png)
+![images for exp 3](./images/image5.png)
 
-![images for exp 3](image7.png)
+![images for exp 3](./images/image7.png)
 
 ### Comparing Image Layers
 
@@ -80,10 +80,10 @@ Number of layers
 Size of each layer
 Commands used to build each layer
 
-![images for exp 3](image6.png)
-![images for exp 3](image8.png)
-![images for exp 3](image9.png)
-![images for exp 3](image10.png)
+![images for exp 3](./images/image6.png)
+![images for exp 3](./images/image8.png)
+![images for exp 3](./images/image9.png)
+![images for exp 3](./images/image10.png)
 ### Observations
 
 | Image          | Size       | Layers       | Notes                                |
