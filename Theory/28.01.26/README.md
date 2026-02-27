@@ -67,15 +67,15 @@ The output shows the java-hello image along with the base ubuntu image.
 ## Screenshots
 
 ### Dockerfile
-![Dockerfile](./image1/dockerfile.jpeg)
+![Dockerfile](./images/dockerfile.jpeg)
 
 ### Java Program
-![Hello Java](./image2/hello-java.jpeg)
+![Hello Java](./images/hello-java.jpeg)
 
 ### Building Docker Image
-![Docker Build](./image3/docker-build.jpeg)
+![Docker Build](./images/docker-build.jpeg)
 
 ### Running Container and Listing Images
-![Docker Run](./image4/docker-run-and-images.jpeg)
-![Docker Run](./image5/docker-run-and-images.jpeg)
-![Docker Run](./image6/docker-run-and-images.jpeg)
+![Docker Run](./images/docker-run-and-images.jpeg)
+![Docker Run](./images/docker-run-and-images.jpeg)
+![Docker Run](./images/docker-run-and-images.jpeg)
