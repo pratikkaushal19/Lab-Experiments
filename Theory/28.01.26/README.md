@@ -70,12 +70,11 @@ The output shows the java-hello image along with the base ubuntu image.
 ![](./images/image1.jpeg)
 
 ### Java Program
-![Hello Java](./images/image2.jpeg)
-
+![](./images/image2.jpeg)
 ### Building Docker Image
-![Docker Build](./images/image3.jpeg)
+![](./images/image3.jpeg)
 
 ### Running Container and Listing Images
-![Docker Run](./images/image4.jpeg)
-![Docker Run](./images/image5.jpeg)
-![Docker Run](./images/image6.jpeg)
+![](./images/image4.jpeg)
+![](./images/image5.jpeg)
+![](./images/image6.jpeg)
