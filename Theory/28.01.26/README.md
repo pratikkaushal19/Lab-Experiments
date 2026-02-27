@@ -67,7 +67,7 @@ The output shows the java-hello image along with the base ubuntu image.
 ## Screenshots
 
 ### Dockerfile
-![Dockerfile](./images/image1.jpeg)
+![](./images/image1.jpeg)
 
 ### Java Program
 ![Hello Java](./images/image2.jpeg)
