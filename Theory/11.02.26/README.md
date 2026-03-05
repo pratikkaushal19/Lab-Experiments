@@ -1,75 +1,88 @@
-
-**Date:** 11.02.26  
-
----
+# Docker Volume – Data Persistence
 
 ## Aim
-To study Docker Volumes and prove that data persists even after container removal.
+
+To understand how Docker volumes work and how they help in persisting data even after a container is removed.
 
 ---
 
 ## Step 1: Create Docker Volume
 
-```bash
+Command:
+
 docker volume create myvolume
-```
+
+---
 Output:
 ![](./images/image1.jpeg)
-
 ## Step 2: List Docker Volumes
-```bash
+
+Command:
+
 docker volume ls
-```
+
+This command shows all the volumes present in Docker.
+
+---
 Output:
 ![](./images/image2.jpeg)
-## Step 3: Run MySQL Container with Volume
-```bash
-docker run -d \
-  --name mysql-container \
-  -e MYSQL_ROOT_PASSWORD=root123 \
-  -v myvolume:/var/lib/mysql \
-  mysql:8.0
-  ```
+## Step 3: Run Container with Volume
+
+Command:
+
+docker run -it -v myvolume:/data ubuntu bash
+
+This command starts an Ubuntu container and mounts the Docker volume **myvolume** to the **/data** directory inside the container.
+
+---
+Output:
 ![](./images/image3.jpeg)
 
-## Step 4: Run Ubuntu Container and Create File in Volume
-```bash
-docker run -it --name test -v test:/home/app ubuntu bash
-```
-Inside container:
-```bash
-cd /home/app
-echo "sapid500119552" > sapid.txt
+## Step 4: Create File in Volume
+
+Commands:
+
+cd /data
+touch testfile.txt
 ls
-```
 
+A file named **testfile.txt** is created inside the mounted volume.
 
-Exit:
-```bash
+---
+
+## Step 5: Exit Container
+
+Command:
+
 exit
-```
 
-## Step 5: Remove the Container
-```bash
-docker rm test
-```
+This exits the running container.
 
+---
 
-## Step 6: Run New Container and Verify Data Persistence
-```bash
-docker run -it --name test2 -v test:/home/app ubuntu bash
-```
-Inside container:
-```bash
-cd /home/app
+## Step 6: Run Another Container and Check Data
+
+Command:
+
+docker run -it -v myvolume:/data ubuntu bash
+
+Then run:
+
+cd /data
 ls
-cat sapid.txt
-```
+
+If **testfile.txt** is visible, it means the data is stored in the Docker volume and persists even after the container is stopped.
+
+---
 Output:
 ![](./images/image4.jpeg)
 
-File persisted even after deleting the first container.
 
 ## Conclusion
-Docker volumes provide persistent storage outside the container lifecycle.
-Data remains safe even if containers are removed or recreated.
+
+Docker volumes provide persistent storage.
+They allow data to remain safe even when containers are removed or recreated.
+
+
+Output:
+![](./images/image4.jpeg)
