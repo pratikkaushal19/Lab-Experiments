@@ -32,6 +32,6 @@
 
 ---
 
-- [Project-1](./Lab/Project-1/README.md)
+- [DOCKER-POSTGRES-PROJECT](.//DOCKER-POSTGRES-PROJECT/README.md)
 
 ---
