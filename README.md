@@ -27,11 +27,3 @@
 - [25.02.26](./Theory/25.02.26/README.md)  
 
 ---
-
-# Project
-
----
-
-- [DOCKER-POSTGRES-PROJECT](.//DOCKER-POSTGRES-PROJECT/README.md)
-
----
