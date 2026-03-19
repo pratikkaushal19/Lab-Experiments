@@ -5,6 +5,7 @@
 - [Experiment-2](./Lab/Experiment-2/README.md)
 - [Experiment-3](./Lab/Experiment-3/README.md)
 - [Experiment-4](./Lab/Experiment-4/README.md)
+- [docker-postgres-project](./Lab/docker-postgres-project/README.md)
 
 ---
 
@@ -27,9 +28,4 @@
 - [25.02.26](./Theory/25.02.26/README.md)  
 
 ---
-
-
-# Project
-
-- [docker-postgres-project](./LAB-EXPERIMENTS/docker-postgres-project/README.md)
 
