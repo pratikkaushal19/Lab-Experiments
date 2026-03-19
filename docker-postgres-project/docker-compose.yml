@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+
+  backend:
+    build: ./backend
+    container_name: backend_container
+    restart: always
+    environment:
+      DB_HOST: db
+      POSTGRES_DB: mydb
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    depends_on:
+      - db
+    networks:
+      mynetwork:
+        ipv4_address: 192.168.1.50
+    ports:
+      - "8000:8000"
+
+  db:
+    build: ./database
+    container_name: postgres_container
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      mynetwork:
+        ipv4_address: 192.168.1.51
+
+volumes:
+  postgres_data:
+
+networks:
+  mynetwork:
+    external: true
