@@ -11,6 +11,8 @@
 - [Experiment-9](./Lab/Experiment-9/README.md)
 - [Experiment-10](./Lab/Experiment-10/README.md)
 - [Experiment-11](./Lab/Experiment-11/README.md)
+- [Experiment-12](./Lab/Experiment-12/README.md)
+
 
 
 ---
