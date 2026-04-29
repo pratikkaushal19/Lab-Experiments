@@ -10,7 +10,7 @@
 - [Experiment-7](./Lab/Experiment-7/README.md)
 - [Experiment-9](./Lab/Experiment-9/README.md)
 - [Experiment-10](./Lab/Experiment-10/README.md)
-
+- [Experiment-11](./Lab/Experiment-11/README.md)
 
 
 ---
