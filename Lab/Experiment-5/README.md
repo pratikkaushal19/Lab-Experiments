@@ -34,8 +34,8 @@ docker rm test-container
 docker run -it --name test-container ubuntu /bin/bash
 cat message.txt
 ```
-![images for exp 5](./images/image1.jpeg)
-![images for exp 5](./images/image2.jpeg)
+![](./images/image1.jpeg)
+![](./images/image2.jpeg)
 File does not exist — Data is lost.
 
 
@@ -48,7 +48,7 @@ docker run -d -v /app/data --name web1 nginx
 docker volume ls
 docker inspect web1 | grep -A 5 Mounts
 ```
-![images for exp 5](./images/image3.jpeg)
+![](./images/image3.jpeg)
 ---
 
 ## 2. Named Volumes
@@ -59,7 +59,7 @@ docker run -d -v mydata:/app/data --name web2 nginx
 docker volume ls
 docker volume inspect mydata
 ```
-![images for exp 5](./images/image4.jpeg)
+![](./images/image4.jpeg)
 ---
 
 ## 3. Bind Mounts (Host Directory)
@@ -70,7 +70,7 @@ docker run -d -v ~/myapp-data:/app/data --name web3 nginx
 echo "From Host" > ~/myapp-data/host-file.txt
 docker exec web3 cat /app/data/host-file.txt
 ```
-![images for exp 5](./images/image5.jpeg)
+![](./images/image5.jpeg)
 
 ---
 
