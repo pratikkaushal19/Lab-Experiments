@@ -40,14 +40,12 @@ In this experiment, a Virtual Machine is created using VirtualBox and Vagrant, a
 Oracle VirtualBox was installed to manage virtual machines.
 
 
-
 ---
 
 #### Step 2: Install Vagrant
 Vagrant was installed to automate VM creation.
 
-![Vagrant Install](./images/image 2.png
-)
+![Vagrant Install](./images/image2.png)
 
 ---
 
@@ -56,26 +54,26 @@ Vagrant was installed to automate VM creation.
 ```bash
 vagrant --version
 ```
-![Vagrant version](./images/image 3.png)
+![Vagrant version](./images/image3.png)
 #### Step 4: Initialize Ubuntu Virtual Machine
 
 ```bash
 vagrant init ubuntu/jammy64
 ```
-![Vagrant init](./images/image 4.png)
+![Vagrant init](./images/image4.png)
 
 
 #### Step 5: Start the Virtual Machine
 ```bash
 vagrant up
 ```
-![Vagrant up](./images/image 5.png)
+![Vagrant up](./images/image5.png)
 
 #### Step 6: Access Ubuntu VM
 ```bash
 vagrant ssh
 ```
-![Vagrant ssh](./images/image 6.png)
+![Vagrant ssh](./images/image6.png)
 
 #### Step 7: Install Nginx inside VM
 ```bash
@@ -89,12 +87,12 @@ sudo systemctl start nginx
 ```bash
 curl localhost
 ```
-![Nginx ](./images/image 7.png)
+![Nginx ](./images/image7.png)
 
 #### Step 9: Observe Resource Usage (VM)
 
 CPU and memory usage were monitored using Task Manager while VM was running.
-![cpu usage ](./images/image 8.png)
+![cpu usage ](./images/image8.png)
 
 
 
