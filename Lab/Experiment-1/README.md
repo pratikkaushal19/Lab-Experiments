@@ -39,7 +39,7 @@ In this experiment, a Virtual Machine is created using VirtualBox and Vagrant, a
 #### Step 1: Install VirtualBox
 Oracle VirtualBox was installed to manage virtual machines.
 
-![VirtualBox](./images/image 1.png)
+![VirtualBox](./images/image 1.jpeg)
 
 ---
 
