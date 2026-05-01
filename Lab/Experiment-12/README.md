@@ -53,7 +53,9 @@ Kubernetes is an open-source container orchestration platform used to automate d
 ```bash
 kubectl get nodes
 ```
-![](./images/image1.jpeg)
+![images for exp 12](./images/image1.jpeg)
+![images for exp 12](./images/image2.jpeg)
+
 ---
 
 ###  Step 2: Create Deployment File
@@ -91,7 +93,7 @@ spec:
 ```bash
 kubectl apply -f wordpress-deployment.yaml
 ```
-![](./images/image3.jpeg)
+![images for exp 12](./images/image3.jpeg)
 ---
 
 ###  Step 4: Verify Pods
@@ -99,7 +101,7 @@ kubectl apply -f wordpress-deployment.yaml
 ```bash
 kubectl get pods
 ```
-![](./images/image4.jpeg)
+![images for exp 12](./images/image4.jpeg)
 ---
 
 ### Step 5: Create Service File
@@ -130,7 +132,7 @@ spec:
 ```bash
 kubectl apply -f wordpress-service.yaml
 ```
-![](./images/image5.jpeg)
+![images for exp 12](./images/image5.jpeg)
 ---
 
 ###  Step 7: Verify Service
@@ -138,7 +140,7 @@ kubectl apply -f wordpress-service.yaml
 ```bash
 kubectl get svc
 ```
-![](./images/image6.jpeg)
+![images for exp 12](./images/image6.jpeg)
 ---
 
 ###  Step 8: Access Application
@@ -152,7 +154,7 @@ Open:
 ```
 http://localhost:8082
 ```
-![](./images/image7.jpeg)
+![images for exp 12](./images/image7.jpeg)
 
 ---
 
@@ -169,7 +171,7 @@ kubectl scale deployment wordpress --replicas=4
 ```bash
 kubectl get pods
 ```
-![](./images/image8.jpeg)
+![images for exp 12](./images/image8.jpeg)
 ---
 
 ###  Step 11: Test Self-Healing
@@ -179,7 +181,7 @@ kubectl get pods
 kubectl delete pod <pod-name>
 kubectl get pods
 ```
-![](./images/image9.jpeg)
+![images for exp 12](./images/image9.jpeg)
 ---
 
 ###  Step 12: Cleanup
@@ -188,6 +190,7 @@ kubectl get pods
 kubectl delete -f wordpress-deployment.yaml
 kubectl delete -f wordpress-service.yaml
 ```
+
 ---
 
 ##  Result
