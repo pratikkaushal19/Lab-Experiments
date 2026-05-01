@@ -151,6 +151,8 @@ Open browser:
 ```
 http://localhost:8081
 ```
+
+![images for exp 11](./images/image6.jpeg)
 ![images for exp 11](./images/image7.jpeg)
 ---
 
