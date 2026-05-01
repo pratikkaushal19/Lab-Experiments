@@ -52,7 +52,7 @@ my-app/
   * `Dockerfile`
   * `Jenkinsfile`
 
-![](./images/image1.jpeg)
+![images for exp 7](./images/image1.jpeg)
 
 ---
 
@@ -64,7 +64,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello from CI/CD Pipeline!"
+    return "CI/CD is working 🚀 - Aakriti FINAL"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
@@ -85,7 +85,7 @@ git commit -m "initial commit"
 git push
 ```
 
-![](./images/image2.jpeg)
+![images for exp 7](./images/image2.jpeg)
 
 ---
 
@@ -101,10 +101,10 @@ docker-compose up -d
 * Accessed Jenkins at:
   `http://localhost:8080`
 
-![](./images/image3.jpeg)
-![](./images/image4.jpeg)
-![](./images/image5.jpeg)
-![](./images/image6.jpeg)
+![images for exp 7](./images/image3.jpeg)
+![images for exp 7](./images/image4.jpeg)
+![images for exp 7](./images/image5.jpeg)
+![images for exp 7](./images/image6.jpeg)
 ---
 
 ## Step 5: Configure Jenkins
@@ -113,31 +113,35 @@ docker-compose up -d
 
 * Added Docker Hub token
 * ID: `dockerhub-token`
-![](./images/image7.jpeg)
-![](./images/image8.jpeg)
-![](./images/image9.jpeg)
+![images for exp 7](./images/image7.jpeg)
+![images for exp 7](./images/image8.jpeg)
+![images for exp 7](./images/image9.jpeg)
 
 
 ### ➤ Create Pipeline Job
 
 * Selected: **Pipeline script from SCM**
-* Repo URL: `https://github.com/pratikkaushal19/my-app`
+* Repo URL: `https://github.com/Aakriti2312/my-app.git`
 * Script Path: `Jenkinsfile`
 
-![](./images/image10.jpeg)
-![](./images/image11.jpeg)
+![images for exp 7](./images/image10.jpeg)
+![images for exp 7](./images/image11.jpeg)
 
 ---
 
 ##  Step 6: Setup Webhook
 
 * Added webhook in GitHub
+* Payload URL:
 
+```
+https://your-ngrok-url/github-webhook/
+```
 
 * Enabled push events
 
-![](./images/image12.jpeg)
-![](./images/image13.jpeg)
+![images for exp 7](./images/image12.jpeg)
+![images for exp 7](./images/image13.jpeg)
 
 ---
 
@@ -153,32 +157,30 @@ docker-compose up -d
 * Login to Docker Hub
 * Push Image
 
-![](./images/image14.jpeg)
+![images for exp 7](./images/image14.jpeg)
 
 ---
 
 ## Step 8: Verify on Docker Hub
 
-* Image: `pratikkaushal/myapp`
+* Image: `aakritidhawan/myapp`
 * Tag: `latest`
-![](./images/image15.jpeg)
+![images for exp 7](./images/image15.jpeg)
 
 ---
 
 ## Step 9: Run Docker Container
 
 ```bash
-docker run -d -p 8081:5000 pratikkaushal/myapp
+docker run -d -p 8081:80 aakritidhawan/myapp
+```
 
 Open:
 
 ```
 http://localhost:8081
 ```
-![](./images/image16.jpeg)
-
-![](./images/image17.jpeg)
-
+![images for exp 7](./images/image16.jpeg)
 
 ---
 
