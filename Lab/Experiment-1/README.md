@@ -39,14 +39,14 @@ In this experiment, a Virtual Machine is created using VirtualBox and Vagrant, a
 #### Step 1: Install VirtualBox
 Oracle VirtualBox was installed to manage virtual machines.
 
-![VirtualBox](./images/image 1.jpeg)
+![VirtualBox](./images/image 1.png)
 
 ---
 
 #### Step 2: Install Vagrant
 Vagrant was installed to automate VM creation.
 
-![Vagrant Install](./images/image 2.jpeg)
+![Vagrant Install](./images/image 2.png)
 
 ---
 
@@ -55,7 +55,7 @@ Vagrant was installed to automate VM creation.
 ```bash
 vagrant --version
 ```
-![Vagrant version](./images/image 3.jpeg)
+![Vagrant version](./images/image 3.png)
 #### Step 4: Initialize Ubuntu Virtual Machine
 
 ```bash
