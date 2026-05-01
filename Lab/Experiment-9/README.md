@@ -119,6 +119,8 @@ CMD ["/usr/sbin/sshd", "-D"]
 ```bash
 docker build -t ubuntu-server .
 ```
+![images for exp 9](./images/image3.jpeg)
+![images for exp 9](./images/image4.jpeg)
 ![images for exp 9](./images/image5.jpeg)
 ---
 
@@ -155,6 +157,7 @@ ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ```bash
 ansible all -i inventory.ini -m ping
 ```
+![images for exp 9](./images/image7.jpeg)
 ![images for exp 9](./images/image8.jpeg)
 ---
 
@@ -190,6 +193,7 @@ ansible all -i inventory.ini -m ping
 ```bash
 ansible-playbook -i inventory.ini playbook.yml
 ```
+![images for exp 9](./images/image9.jpeg)
 ![images for exp 9](./images/image10.jpeg)
 ---
 
