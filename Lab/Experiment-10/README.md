@@ -112,7 +112,7 @@ Wait until:
 ```
 SonarQube is operational
 ```
-![](./images/image1.jpeg)
+![images for exp 10](./images/image1.jpeg)
 ---
 
 ###  Step 4: Open Dashboard
@@ -127,7 +127,7 @@ Login:
 
 * Username: admin
 * Password: admin
-![](./images/image2.jpeg)
+![images for exp 10](./images/image2.jpeg)
 ---
 
 ###  Step 5: Generate Token
@@ -135,7 +135,7 @@ Login:
 * Go to **My Account → Security**
 * Generate token
 * Copy token
-![](./images/image3.jpeg)
+![images for exp 10](./images/image3.jpeg)
 ---
 
 ###  Step 6: Create Sample Java Project
@@ -145,7 +145,7 @@ mkdir sample-java-app
 cd sample-java-app
 mkdir -p src/main/java/com/example
 ```
-![](./images/image4.jpeg)
+![images for exp 10](./images/image4.jpeg)
 ---
 
 ###  Step 7: Create Java File
@@ -212,7 +212,7 @@ public class Calculator {
 ```bash
 mvn clean verify sonar:sonar
 ```
-![](./images/image5.jpeg)
+![images for exp 10](./images/image5.jpeg)
 ---
 
 ###  Step 10: View Results
@@ -224,13 +224,14 @@ http://localhost:9001
 ```
 
 Select project: **sample-java-app**
-![](./images/image6.jpeg)
-![](./images/image7.jpeg)
-![](./images/image8.jpeg)
-![](./images/image9.jpeg)
-![](./images/image10.jpeg)
-![](./images/image11.jpeg)
-![](./images/image12.jpeg)
+![images for exp 10](./images/image6.jpeg)
+![images for exp 10](./images/image7.jpeg)
+![images for exp 10](./images/image8.jpeg)
+![images for exp 10](./images/image9.jpeg)
+![images for exp 10](./images/image10.jpeg)
+![images for exp 10](./images/image11.jpeg)
+![images for exp 10](./images/image12.jpeg)
+
 ---
 
 ##  Expected Output
