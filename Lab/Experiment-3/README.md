@@ -34,8 +34,8 @@ docker pull nginx:latest
 docker run -d --name nginx-default -p 8080:80 nginx
 ```
 
-![images for exp 3](./images/image1.jpeg)
-![images for exp 3](./images/image2.jpeg)
+![images for exp 3](./images/image1.png)
+![images for exp 3](./images/image2.png)
 
 ### Run NGINX Built on Ubuntu
 
