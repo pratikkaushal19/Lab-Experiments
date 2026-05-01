@@ -70,7 +70,7 @@ docker run -d -v ~/myapp-data:/app/data --name web3 nginx
 echo "From Host" > ~/myapp-data/host-file.txt
 docker exec web3 cat /app/data/host-file.txt
 ```
-![](./images/image5.png)
+![](./images/image5.jpeg)
 
 ---
 
@@ -95,7 +95,7 @@ docker run -d \
   mysql:8.0
 ```
 
-![](./images/image6.png)
+![](./images/image6.jpeg)
 
 ---
 
@@ -121,7 +121,7 @@ docker run -d \
 curl http://localhost:8080
 ```
 
-![](./images/image7.png)
+![](./images/image7.jpeg)
 
 ---
 
