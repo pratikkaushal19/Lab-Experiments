@@ -45,7 +45,7 @@ Oracle VirtualBox was installed to manage virtual machines.
 #### Step 2: Install Vagrant
 Vagrant was installed to automate VM creation.
 
-![Vagrant Install](./images/image2.png)
+![Vagrant Install](./images/image2.jpeg)
 
 ---
 
