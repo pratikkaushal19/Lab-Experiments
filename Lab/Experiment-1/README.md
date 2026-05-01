@@ -46,7 +46,8 @@ Oracle VirtualBox was installed to manage virtual machines.
 #### Step 2: Install Vagrant
 Vagrant was installed to automate VM creation.
 
-![Vagrant Install](./images/image 2.jpeg)
+![Vagrant Install](./images/image 2.png
+)
 
 ---
 
@@ -61,20 +62,20 @@ vagrant --version
 ```bash
 vagrant init ubuntu/jammy64
 ```
-![Vagrant init](./images/image 4.jpeg)
+![Vagrant init](./images/image 4.png)
 
 
 #### Step 5: Start the Virtual Machine
 ```bash
 vagrant up
 ```
-![Vagrant up](./images/image 5.jpeg)
+![Vagrant up](./images/image 5.png)
 
 #### Step 6: Access Ubuntu VM
 ```bash
 vagrant ssh
 ```
-![Vagrant ssh](./images/image 6.jpeg)
+![Vagrant ssh](./images/image 6.png)
 
 #### Step 7: Install Nginx inside VM
 ```bash
@@ -88,12 +89,12 @@ sudo systemctl start nginx
 ```bash
 curl localhost
 ```
-![Nginx ](./images/image 7.jpeg)
+![Nginx ](./images/image 7.png)
 
 #### Step 9: Observe Resource Usage (VM)
 
 CPU and memory usage were monitored using Task Manager while VM was running.
-![cpu usage ](./images/image 8.jpeg)
+![cpu usage ](./images/image 8.png)
 
 
 
