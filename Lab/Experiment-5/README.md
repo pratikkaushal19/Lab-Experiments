@@ -34,8 +34,8 @@ docker rm test-container
 docker run -it --name test-container ubuntu /bin/bash
 cat message.txt
 ```
-![](./images/image1.jpeg)
-![](./images/image2.jpeg)
+![](./images/image1.png)
+![](./images/image2.png)
 File does not exist — Data is lost.
 
 
@@ -48,7 +48,7 @@ docker run -d -v /app/data --name web1 nginx
 docker volume ls
 docker inspect web1 | grep -A 5 Mounts
 ```
-![](./images/image3.jpeg)
+![](./images/image3.png)
 ---
 
 ## 2. Named Volumes
@@ -59,7 +59,7 @@ docker run -d -v mydata:/app/data --name web2 nginx
 docker volume ls
 docker volume inspect mydata
 ```
-![](./images/image4.jpeg)
+![](./images/image4.png)
 ---
 
 ## 3. Bind Mounts (Host Directory)
@@ -70,7 +70,7 @@ docker run -d -v ~/myapp-data:/app/data --name web3 nginx
 echo "From Host" > ~/myapp-data/host-file.txt
 docker exec web3 cat /app/data/host-file.txt
 ```
-![](./images/image5.jpeg)
+![](./images/image5.png)
 
 ---
 
@@ -95,7 +95,7 @@ docker run -d \
   mysql:8.0
 ```
 
-![](./images/image6.jpeg)
+![](./images/image6.png)
 
 ---
 
@@ -121,7 +121,7 @@ docker run -d \
 curl http://localhost:8080
 ```
 
-![](./images/image7.jpeg)
+![](./images/image7.png)
 
 ---
 
@@ -165,7 +165,7 @@ docker run -d \
   my-app
 ```
 
-![](./images/image8.jpeg)
+![](./images/image8.png)
 
 ---
 
@@ -241,7 +241,7 @@ docker logs --tail 100 container-name
 docker inspect container-name
 docker events
 ```
-![](./images/image9.jpeg)
+![](./images/image9.png)
 ---
 
 #  Part 4: Docker Networks
@@ -273,7 +273,7 @@ docker run -d --name host-app --network host nginx
 curl http://localhost
 ```
 
-![](./images/image10.jpeg)
+![](./images/image10.png)
 ---
 
 #  Part 5: Complete Real-World Example
@@ -319,17 +319,17 @@ docker run -d \
   --env-file .env.production \
   flask-app:latest
 ```
-![](./images/image11.jpeg)
+![](./images/image11.png)
 
-![](./images/image12.jpeg)
+![](./images/image12.png)
 
-![](./images/image13.jpeg)
+![](./images/image13.png)
 
-![](./images/image14.jpeg)
+![](./images/image14.png)
 
-![](./images/image15.jpeg)
+![](./images/image15.png)
 
-![](./images/image16.jpeg)
+![](./images/image16.png)
 ---
 
 #  Key Takeaways
