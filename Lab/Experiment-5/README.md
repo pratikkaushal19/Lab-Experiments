@@ -34,8 +34,8 @@ docker rm test-container
 docker run -it --name test-container ubuntu /bin/bash
 cat message.txt
 ```
-![](./images/image1.png)
-![](./images/image2.png)
+![](./images/image1.jpeg)
+![](./images/image2.jpeg)
 File does not exist — Data is lost.
 
 
@@ -48,7 +48,7 @@ docker run -d -v /app/data --name web1 nginx
 docker volume ls
 docker inspect web1 | grep -A 5 Mounts
 ```
-![](./images/image3.png)
+![](./images/image3.jpeg)
 ---
 
 ## 2. Named Volumes
@@ -59,7 +59,7 @@ docker run -d -v mydata:/app/data --name web2 nginx
 docker volume ls
 docker volume inspect mydata
 ```
-![](./images/image4.png)
+![](./images/image4.jpeg)
 ---
 
 ## 3. Bind Mounts (Host Directory)
