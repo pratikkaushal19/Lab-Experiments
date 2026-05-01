@@ -49,8 +49,8 @@ Docker Swarm is a container orchestration tool that allows you to manage a clust
 ###  Step 1: Create Project Directory
 
 ```bash
-mkdir swarm-lab
-cd swarm-lab
+mkdir Experiment-11
+cd Experiment-11
 ```
 ![images for exp 11](./images/image1.jpeg)
 ---
