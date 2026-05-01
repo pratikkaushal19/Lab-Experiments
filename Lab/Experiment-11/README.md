@@ -49,10 +49,10 @@ Docker Swarm is a container orchestration tool that allows you to manage a clust
 ###  Step 1: Create Project Directory
 
 ```bash
-mkdir Experiment-11
-cd Experiment-11
+mkdir swarm-lab
+cd swarm-lab
 ```
-![](./images/image1.jpeg)
+![images for exp 11](./images/image1.jpeg)
 ---
 
 ###  Step 2: Create docker-compose.yml
@@ -114,7 +114,7 @@ Verify:
 ```bash
 docker node ls
 ```
-![](./images/image2.jpeg)
+![images for exp 11](./images/image2.jpeg)
 
 ---
 
@@ -123,7 +123,7 @@ docker node ls
 ```bash
 docker stack deploy -c docker-compose.yml wpstack
 ```
-![](./images/image3.jpeg)
+![images for exp 11](./images/image3.jpeg)
 
 ---
 
@@ -132,7 +132,7 @@ docker stack deploy -c docker-compose.yml wpstack
 ```bash
 docker service ls
 ```
-![](./images/image4.jpeg)
+![images for exp 11](./images/image4.jpeg)
 ---
 
 ###  Step 7: Check Running Containers
@@ -140,7 +140,7 @@ docker service ls
 ```bash
 docker ps
 ```
-![](./images/image5.jpeg)
+![images for exp 11](./images/image5.jpeg)
 
 ---
 
@@ -149,9 +149,9 @@ docker ps
 Open browser:
 
 ```
-http://localhost:8080
+http://localhost:8081
 ```
-![](./images/image7.jpeg)
+![images for exp 11](./images/image7.jpeg)
 ---
 
 ###  Step 9: Scale Application
@@ -165,8 +165,8 @@ Verify:
 ```bash
 docker service ls
 ```
-![](./images/image8.jpeg)
-![](./images/image9.jpeg)
+![images for exp 11](./images/image8.jpeg)
+![images for exp 11](./images/image9.jpeg)
 ---
 
 ###  Step 10: Test Self-Healing
@@ -176,8 +176,8 @@ docker ps | grep wordpress
 docker kill <container-id>
 docker service ps wpstack_wordpress
 ```
-![](./images/image10.jpeg)
-![](./images/image11.jpeg)
+![images for exp 11](./images/image10.jpeg)
+![images for exp 11](./images/image11.jpeg)
 
 ---
 
@@ -186,7 +186,6 @@ docker service ps wpstack_wordpress
 ```bash
 docker stack rm wpstack
 ```
-![](./images/image11.jpeg)
 
 ---
 
