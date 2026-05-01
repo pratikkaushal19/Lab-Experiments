@@ -64,7 +64,7 @@ It uses an **agentless architecture**, meaning no software is required on manage
 mkdir ansible-docker-lab
 cd ansible-docker-lab
 ```
-![](./images/image1.jpeg)
+![images for exp 9](./images/image1.jpeg)
 ---
 
 ###  Step 2: Generate SSH Keys
@@ -72,7 +72,7 @@ cd ansible-docker-lab
 ```bash
 ssh-keygen -t rsa -b 4096
 ```
-![](./images/image2.jpeg)
+![images for exp 9](./images/image2.jpeg)
 ---
 
 ###  Step 3: Copy SSH Keys
@@ -119,9 +119,7 @@ CMD ["/usr/sbin/sshd", "-D"]
 ```bash
 docker build -t ubuntu-server .
 ```
-![](./images/image3.jpeg)
-![](./images/image4.jpeg)
-![](./images/image5.jpeg)
+![images for exp 9](./images/image5.jpeg)
 ---
 
 ###  Step 6: Run Multiple Containers
@@ -131,7 +129,7 @@ for i in {1..4}; do
   docker run -d -p 220${i}:22 --name server${i} ubuntu-server
 done
 ```
-![](./images/image6.jpeg)
+![images for exp 9](./images/image6.jpeg)
 ---
 
 ###  Step 7: Create Inventory File (inventory.ini)
@@ -157,8 +155,7 @@ ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ```bash
 ansible all -i inventory.ini -m ping
 ```
-![](./images/image7.jpeg)
-![](./images/image8.jpeg)
+![images for exp 9](./images/image8.jpeg)
 ---
 
 ###  Step 9: Create Playbook (playbook.yml)
@@ -193,8 +190,7 @@ ansible all -i inventory.ini -m ping
 ```bash
 ansible-playbook -i inventory.ini playbook.yml
 ```
-![](./images/image9.jpeg)
-![](./images/image10.jpeg)
+![images for exp 9](./images/image10.jpeg)
 ---
 
 ###  Step 11: Verify Output
@@ -202,8 +198,9 @@ ansible-playbook -i inventory.ini playbook.yml
 ```bash
 ansible all -i inventory.ini -m command -a "cat /root/ansible_test.txt"
 ```
-![](./images/image11.jpeg)
-![](./images/image12.jpeg)
+![images for exp 9](./images/image11.jpeg)
+![images for exp 9](./images/image12.jpeg)
+
 ---
 
 ###  Step 12: Cleanup
